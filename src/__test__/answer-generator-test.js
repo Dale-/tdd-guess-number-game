@@ -16,7 +16,7 @@ describe('Class AnswerGenerator', () => {
         repeatCount = function (string, substring) {
             let count = 0;
             for (let i = 0; i < string.length; i++) {
-                if(substring === string[i]) {
+                if (substring === string[i]) {
                     count++;
                 }
             }

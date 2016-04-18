@@ -2,7 +2,7 @@
  * Created by Dale on 4/17/16.
  */
 export default class CompareNumber {
-    static compareNum(answer, input) {
+    compareNum(answer, input) {
 
         let score = {A: 0, B: 0};
 
