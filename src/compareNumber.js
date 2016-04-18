@@ -4,7 +4,7 @@
 export default class CompareNumber {
     static compareNum(answer, input) {
 
-        let score = { A: 0, B: 0 };
+        let score = {A: 0, B: 0};
 
         for (let i = 0; i < answer.length; i++) {
             if (answer[i] === input[i]) {
@@ -17,11 +17,6 @@ export default class CompareNumber {
     }
 
     static contains(string, substring) {
-        for (let i = 0; i < string.length; i++) {
-            if (string[i] === substring) {
-                return true;
-            }
-        }
-        return false;
+        return string.indexOf(substring) != -1;
     }
 }
