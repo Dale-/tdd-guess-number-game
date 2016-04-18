@@ -12,10 +12,10 @@ describe('Class CompareNumber', () => {
             expect(result).toEqual('4A0B');
         });
 
-        //it('1234 compare to 5678 should return 0A0B', () => {
-        //    let result = CompareNumber.compareNum('1234', '5678');
-        //    expect(result).toEqual('0A0B');
-        //});
+        it('1234 compare to 5678 should return 0A0B', () => {
+            let result = CompareNumber.compareNum('1234', '5678');
+            expect(result).toEqual('0A0B');
+        });
     });
 });
 
