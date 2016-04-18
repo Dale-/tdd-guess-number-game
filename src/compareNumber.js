@@ -3,20 +3,17 @@
  */
 export default class CompareNumber {
     static compareNum(answer, input) {
-        let countA = 0;
-        let countB = 0;
-        if (answer === input) {
-            return '4A0B';
-        }
+
+        let score = { A: 0, B: 0 };
 
         for (let i = 0; i < answer.length; i++) {
             if (answer[i] === input[i]) {
-                countA++;
+                score.A++;
             } else if (this.contains(answer, input[i])) {
-                countB++;
+                score.B++;
             }
         }
-        return countA + 'A' + countB + 'B';
+        return score.A + 'A' + score.B + 'B';
     }
 
     static contains(string, substring) {

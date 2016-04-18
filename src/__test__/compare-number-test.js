@@ -26,6 +26,11 @@ describe('Class CompareNumber', () => {
             let result = CompareNumber.compareNum('1234', '3456');
             expect(result).toEqual('0A2B');
         });
+
+        it('1234 compare to 1356 should return 1A1B', () => {
+            let result = CompareNumber.compareNum('1234', '1356');
+            expect(result).toEqual('1A1B');
+        });
     });
 });
 
