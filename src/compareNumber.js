@@ -3,6 +3,16 @@
  */
 export default class CompareNumber {
     static compareNum(answer, input) {
-        return answer === input ? '4A0B' : '0A0B';
+        let countA = 0;
+        if (answer === input) {
+            return '4A0B';
+        }
+
+        for (let i = 0; i < answer.length; i++) {
+            if (answer[i] === input[i]) {
+                countA++;
+            }
+        }
+        return countA + 'A0B';
     }
 }
